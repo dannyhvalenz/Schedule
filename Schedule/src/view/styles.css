@@ -1,0 +1,200 @@
+/**
+* @author Daniela Hernandez Valenzuela
+* @since 08/04/2018
+* @version 1.2
+*/
+
+* {
+    -fx-primary :  #e04d01;
+    -fx-secondary :  #282c35;
+    -fx-primarytext : #ffffff;
+}
+
+/* Buttons */
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12px;
+    -fx-font-family: Futura;
+}
+.button:hover{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+#btn_nuevaClase{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 20px;
+    -fx-font-size: 24px;
+    -fx-font-family: Futura;
+}
+/* Hamburger */
+.jfx-hamburger StackPane {
+    -fx-background-color: #ffffff;
+}
+
+/* Agenda */
+.Agenda { 
+    -fx-font-family: "Futura";
+    -fx-font-size: 11px;    
+}
+
+.Agenda .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+.Agenda .scroll-bar:vertical .increment-button ,
+.Agenda .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+
+.Agenda  .scroll-bar .increment-arrow,
+.Agenda  .scroll-bar .decrement-arrow{
+    -fx-shape:" ";  
+    -fx-padding:0;
+}
+
+.Agenda .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.Agenda .Week {
+    -fx-background-color: WHITE;
+}
+
+.Agenda .HourLabel {
+    -fx-fill: BLACK;
+    -fx-stroke: transparent;
+}
+
+.Agenda .HourLine {
+    -fx-fill: transparent;
+    -fx-stroke: LIGHTGRAY;
+}
+
+.Agenda .HalfHourLine {
+    -fx-fill: transparent;
+    -fx-stroke: LIGHTGRAY;
+    -fx-stroke-dash-array: 4 4 4 4;
+}
+
+.Agenda .DayHeader {
+    -fx-border-color:LIGHTGRAY;
+    -fx-border-width: 0px 0px 0px 1px;
+}
+
+/*
+.Agenda .DayHeader .weekend { 
+    -fx-text-fill: BLACK;
+    -fx-font-weight: bold;
+}
+*/
+
+.Agenda .Day {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-border-color:LIGHTGRAY;
+    -fx-border-width: 0px 0px 0px 1px;
+}
+
+.Agenda .weekend {
+    -fx-background-color: #eeeeee90;
+}
+
+.Agenda .today {}
+
+.Agenda .Appointment {
+    -fx-border-color: WHITE;
+    -fx-border-width: 1px;
+}
+
+.Agenda .AppointmentTimeLabel {
+    -fx-fill: BLACK;
+    -fx-stroke: transparent;
+    -fx-font-size: 0.8em;
+}
+
+.Agenda .AppointmentLabel {
+    -fx-fill: BLACK;
+    -fx-stroke: transparent;
+}
+
+/* Agenda Colors */
+.group0 { -fx-background-color: #f44237; }
+.group1 { -fx-background-color: #fb9700;}
+.group2 { -fx-background-color: #8bc24a; }
+.group3 { -fx-background-color: #2196f3; }
+.group4 { -fx-background-color: #ea1e63;}
+.group5 { -fx-background-color: #9c28b1; -fx-text-fill: -fx-primarytext;}
+.group6 { -fx-background-color: #fa5722; }
+.group7 { -fx-background-color: #cddc38; }
+.group8 { -fx-background-color: #2bbcd5; }
+.group9 { -fx-background-color: #673bb7; }
+.group10 { -fx-background-color: #3f51b5; }
+.group11 { -fx-background-color: #4cb050; }
+.group12 { -fx-background-color: #25a9f5; }
+.group13 { -fx-background-color: #219788; }
+.group14 { -fx-background-color: #feeb3c; }
+.group15 { -fx-background-color: #fdc10a; }
+.group16 { -fx-background-color: #607d8b; }
+
+.Agenda .DurationDragger {
+    -fx-fill: #00000040;	
+}
+
+.Agenda .MenuIcon {
+    -fx-fill: #00000040;	
+}
+
+.Agenda .GhostRectangle {
+    -fx-fill: transparent;
+    -fx-stroke: #00000080;
+    -fx-stroke-width: 1;
+    -fx-stroke-dash-array: 4 4 4 4;
+}
+
+.Agenda .Now {
+    -fx-fill: #ff1744;
+    -fx-stroke: WHITE;
+}
+
+.Agenda .History {
+    -fx-stroke: transparent;
+    -fx-fill: #FFFFFF70;
+}
+
+.AgendaPopup {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0,0,1,2;
+    -fx-background-radius: 5,5,4,3;
+    -fx-padding: 0.766667em 0.733333em 0.75em 0.733333em;
+    -fx-text-fill: -fx-text-base-color;
+}
+
+.AgendaPopup .AppointmentGroups {}
+
+.AgendaPopup .AppointmentGroup {
+    -fx-border-color: WHITE;
+    -fx-border-width: 1px;
+}
+
+.AgendaPopup .close-icon  {
+    -fx-image: url("AgendaWeekSkinPopupCloseWindowIcon.png");
+}
+
+.AgendaPopup .delete-icon  {
+    -fx-image: url("AgendaWeekSkinDeleteIcon.png");
+}
+
+.AgendaPopup .action-icon  {
+    -fx-image: url("AgendaWeekSkinActionIcon.png");
+}
